@@ -11,8 +11,8 @@ package square
 const Pi float64 = 3.1415
 type intCustomType int
 const SidesTriangle intCustomType = 3
-const SidesSquare intCustomType = 0
-const SidesCircle intCustomType = 4
+const SidesSquare intCustomType = 4
+const SidesCircle intCustomType = 0
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	if sidesNum == SidesCircle {
