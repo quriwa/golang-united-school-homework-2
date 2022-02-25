@@ -8,5 +8,16 @@ package square
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
+const Pi float64 = 3.1415
+
+type intCustomType int
+
+func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
+	if sidesNum == 0 {
+		return sideLen * sideLen * Pi
+	} else if sidesNum == 3 || sidesNum == 4 {
+		return sideLen * float64(sidesNum)
+	} else {
+		return 0
+	}
 }
