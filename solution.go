@@ -9,13 +9,15 @@ package square
 // CalcSquare(10.0, SidesCircle)
 
 const Pi float64 = 3.1415
-
 type intCustomType int
+const SidesTriangle intCustomType
+const SidesSquare intCustomType
+const SidesCircle intCustomType
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
-	if sidesNum == 0 {
+	if sidesNum == SidesCircle {
 		return sideLen * sideLen * Pi
-	} else if sidesNum == 3 || sidesNum == 4 {
+	} else if sidesNum == SidesTriangle || sidesNum == SidesSquare {
 		return sideLen * float64(sidesNum)
 	} else {
 		return 0
