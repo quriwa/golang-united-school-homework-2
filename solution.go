@@ -8,7 +8,7 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-const Pi float64 = 3,141592
+const Pi float64 = 3.141592
 type intCustomType int
 const SidesTriangle intCustomType = 3
 const SidesSquare intCustomType = 4
