@@ -8,7 +8,7 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-const Pi float64 = 3.1415
+const Pi float64 = 3,141592
 type intCustomType int
 const SidesTriangle intCustomType = 3
 const SidesSquare intCustomType = 4
@@ -18,7 +18,7 @@ func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	if sidesNum == SidesCircle {
 		return sideLen * sideLen * Pi
 	} else if sidesNum == SidesSquare {
-		return sideLen * float64(sidesNum)
+		return sideLen * sideLen
 	} else if sidesNum == SidesTriangle{
 		return math.Sqrt(3)/4*sideLen*sideLen
 	} else {
